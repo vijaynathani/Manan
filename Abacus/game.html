@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="abacus, math"/>
+		<meta name="description" content="An online soroban abacus designed to play online and illustrate the use of this ancient oriental calculator"/>
+		<link rel="stylesheet" type="text/css" href="abacus.css">
+		<title>Play with Abacus</title>
+	</head>
+	<body>
+
+			<div id='canvasdiv'>
+			<canvas id="canvas" width='1520' height='300'>
+				Sorry, this application needs HTML5 canvas support, please upgrade you browser. Thanks
+			</canvas>
+			</div>
+			<fieldset>
+				<legend>Settings</legend>
+			Number of Rods:
+			<select id='numberOfRods'>
+				<option value='1'>1</option>
+				<option value='2' selected>2</option>
+				<option value='3'>3</option>
+				<option value='4'>4</option>
+				<option value='5'>5</option>
+				<option value='6'>6</option>
+				<option value='7'>7</option>
+				<option value='8'>8</option>
+				<option value='9'>9</option>
+			</select>
+			<input class='button' id='reset' type='button' value='Reset Abacus'/>
+			</fieldset>
+		<br/>
+		<audio id="beadSound" src="clac.wav" style="display: none;"></audio>
+<br><br>
+
+		<script src='abacus.js'></script>
+
+	</body>
+</html>
